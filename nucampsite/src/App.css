@@ -1,18 +1,42 @@
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
-h5 {
-  font-family: 'Lobster', cursive;
+h1, h2, h3, .card-body>h5 {
+  font-family: "Lobster", cursive;
+}
+
+h2 {
+  color: #3046C5;
 }
 
 .card-img-overlay h5 {
-  color: #fff;
+  color: white;
   background-color: rgba(0, 0, 0, 0.5);
-  text-align: center;
 }
 
-li {
-  list-style-type: none;
-  margin-left: 0px;
+.row-content {
+  padding: 50px 0;
+  border-bottom: 1px ridge;
+  min-height: 200px;
+}
+
+.site-footer {
+  background-image: linear-gradient(#CEC8FF, white);
+  padding: 20px 0;
+}
+
+.jumbotron {
+  margin: 0;
+  padding: 30px;
+  background-image: linear-gradient(to right, #6a89cc, #60a3bc);
+  color: white;
+}
+
+.jumbotron h2 {
+  color: #82ccdd;
+}
+
+.navbar-dark {
+  background-color: #4a69bd;
 }
