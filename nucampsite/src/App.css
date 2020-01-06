@@ -1,5 +1,5 @@
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 
 h1, h2, h3, .card-body>h5 {
@@ -12,6 +12,8 @@ h2 {
 
 .card-img-overlay h5 {
   color: white;
+  font-family: 'Quicksand', sans-serif;
+  padding: 0.5rem;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -22,8 +24,12 @@ h2 {
 }
 
 .site-footer {
-  background-image: linear-gradient(#CEC8FF, white);
+  background-color: #4a69bd;
   padding: 20px 0;
+}
+
+.site-footer a, .site-footer h5 {
+  color: #fff;
 }
 
 .jumbotron {
