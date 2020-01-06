@@ -2,7 +2,7 @@ import React from 'react';
 function Contact(props) {
     return (
         <div className="container">
-            <div className="row">
+            <div className="row my-5">
                 <div className="col">
                     <h2>Contact Us</h2>
                     <hr />

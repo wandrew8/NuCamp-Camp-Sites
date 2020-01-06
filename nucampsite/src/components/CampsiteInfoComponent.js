@@ -42,9 +42,9 @@ function CampsiteInfoComponent(props) {
         if (props.campsite) {
             return (
                 <div className="container">
-                    <div className="row"> 
+                    <div className="row my-4"> 
                         <RenderCampsite campsite={props.campsite} />
-                        <RenderComments comments={props.campsite.comments} />
+                        <RenderComments comments={props.comments} />
                     </div>
                 </div>
             )
