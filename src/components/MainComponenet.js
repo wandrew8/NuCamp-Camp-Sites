@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Switch, Route, Redirect} from 'react-router-dom';
-import { CAMPSITES } from '../components/shared/campsites';
-import { COMMENTS } from '../components/shared/comments';
-import { PARTNERS } from '../components/shared/partners';
-import { PROMOTIONS } from '../components/shared/promotions';
+import { CAMPSITES } from './shared/campsites';
+import { COMMENTS } from './shared/comments';
+import { PARTNERS } from './shared/partners';
+import { PROMOTIONS } from './shared/promotions';
 import Directory from './Directory';
 import Contact from './ContactComponent';
 import About from './AboutComponent';
