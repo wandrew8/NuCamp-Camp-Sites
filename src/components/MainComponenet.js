@@ -10,7 +10,7 @@ import FooterComponent from './FooterComponent';
 import CampsiteInfoComponent from './CampsiteInfoComponent';
 import { actions } from 'react-redux-form';
 import { addComment, fetchCampsites } from '../redux/ActionCreator';
-
+import { TransitionGroup, CSSTransition } from 'react-transition-group';
 const mapStateToProps = state => {
   return {
     campsites: state.campsites,
@@ -62,14 +62,18 @@ class MainComponent extends Component {
     return (
       <div className="App">
             <HeaderComponent />
-              <Switch>
-                <Route path="/home" component={HomePage} />
-                <Route exact path="/aboutus" render={() => <About partners={this.props.partners} />} />
-                <Route exact path="/directory" render={() => <Directory campsites={this.props.campsites}/>} />
-                <Route exact path="/contactus" render={() => <Contact resetFeedbackForm={this.props.resetFeedbackForm} />} />
-                <Route path="/directory/:campsiteId" component={CampsiteWithId} />
-                <Redirect to="/home" />
-              </Switch>
+              <TransitionGroup>
+                <CSSTransition timeout={300} classNames="page" key={this.props.location.key}>
+                  <Switch>
+                    <Route path="/home" component={HomePage} />
+                    <Route exact path="/aboutus" render={() => <About partners={this.props.partners} />} />
+                    <Route exact path="/directory" render={() => <Directory campsites={this.props.campsites}/>} />
+                    <Route exact path="/contactus" render={() => <Contact resetFeedbackForm={this.props.resetFeedbackForm} />} />
+                    <Route path="/directory/:campsiteId" component={CampsiteWithId} />
+                    <Redirect to="/home" />
+                  </Switch>
+                </CSSTransition>
+              </TransitionGroup>
             <FooterComponent />
       </div>
     )
