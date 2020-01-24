@@ -193,6 +193,21 @@
       "text": "I caught a world-record-breaking trout here on my last visit.",
       "author": "McKenzie Sebastian",
       "date": "2019-02-18T18:12Z"
+    },
+    {
+      "campsiteId": 3,
+      "rating": "4",
+      "author": "Andrew Weiss",
+      "text": "Wow! This campsite is amazing!",
+      "id": 20
+    },
+    {
+      "campsiteId": 2,
+      "rating": "4",
+      "author": "Kelsey Simth",
+      "text": "The hiking in this area is amazing!",
+      "date": "2020-01-24T04:06:14.383Z",
+      "id": 21
     }
   ],
   "partners": [
